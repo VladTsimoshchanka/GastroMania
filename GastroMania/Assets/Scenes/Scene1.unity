@@ -721,11 +721,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d08a2e1c31002a459f0107b4d58dea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodSelf: {fileID: 0}
-  alterEgo: {fileID: 0}
-  availability1Text: {fileID: 0}
-  availability2Text: {fileID: 0}
+  DonutAvailabilityText: {fileID: 0}
+  CupcakeAvailabilityText: {fileID: 0}
+  foodPlaces: []
+  ShopState: {fileID: 0}
+  foodPlace: {fileID: 0}
   gameOver: 0
+  donut: {fileID: 0}
+  cupcake: {fileID: 0}
 --- !u!1001 &987785041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -916,6 +919,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663305311}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1837877894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4217027775365313753, guid: 1a3e5b79e76c5304fae71c72cfc59858,
+    type: 3}
+  m_PrefabInstance: {fileID: 6157625062027076240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1837877898
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837877894}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0cb6ea3aae41c934f98ccfeb1351f8e4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2000744870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -991,6 +1019,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2000744870}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2000744872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 716eb86c5f9a24921a13fd6bcaa16cb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2000744870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2000744873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000744872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d9532f5b53e4a4588f0570e0131fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maximumAngleForEvent: 15
+--- !u!95 &2000744874
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000744872}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2ce59d8641984c94088cd30a6e6c86c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2113867364
 GameObject:
   m_ObjectHideFlags: 0

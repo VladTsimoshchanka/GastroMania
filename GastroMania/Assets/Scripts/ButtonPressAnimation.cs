@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿
+//This is a file that Riley wrote in our previous project, I used it to abstain from using prohibitted resources for this project.
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

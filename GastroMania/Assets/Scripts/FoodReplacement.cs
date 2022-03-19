@@ -5,7 +5,7 @@ using UnityEngine;
 public class FoodReplacement : MonoBehaviour
 {
     [Range(0, 360)]
-    public float maximumAngleForEvent = 30f;
+    public float maximumAngleForEvent = 15f;
     public GameObject foodSelf;
     public GameObject alterEgo;
     public bool isOriginal;
@@ -14,7 +14,7 @@ public class FoodReplacement : MonoBehaviour
     {
         
     }
-
+    //This script is designed to interchange cherries and hotdogs depending on the angle from player's camera
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +40,7 @@ public class FoodReplacement : MonoBehaviour
         }
         
     }
+    //Method that destroys previous food object and places a new one. 
     public void AlterFood()
     {
         Destroy(gameObject);
